@@ -1,0 +1,21 @@
+<template>
+
+<lightning-card title="test">
+
+    <lightning-button 
+    label="Click Me"
+    onclick={askForName}>
+    
+    </lightning-button>
+    <p><strong>Name: </strong>{Name}</p>
+    <lightning-datatable
+            data={data}
+            columns={columns}
+            key-field="id"
+            onrowselection={getSelectedName}>
+    </lightning-datatable>
+
+</lightning-card>
+    
+    </template>
+    
